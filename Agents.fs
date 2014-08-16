@@ -5,6 +5,10 @@ open System.Threading
 
 type Message = AsyncReplyChannel<float>
 
+type AgentState = 
+    | Start
+    | Stop
+
 module Agents = 
     let rand = new Random()
 
