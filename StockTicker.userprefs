@@ -1,18 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina.7.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Utils.fs">
-    <Files>
-      <File FileName="StockTickerViewController.fs" Line="35" Column="35" />
-      <File FileName="Utils.fs" Line="14" Column="14" />
-      <File FileName="Agents.fs" Line="1" Column="1" />
-      <File FileName="AppDelegate.fs" Line="13" Column="13" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.0" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/rachel/Dropbox/Code/Github/Budgeter/Budgeter.iOS/Data.fs" line="64" column="1" />
-      <Breakpoint file="/Users/rachel/Dropbox/Code/Github/Budgeter/Budgeter.iOS/Hashing.fs" line="23" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

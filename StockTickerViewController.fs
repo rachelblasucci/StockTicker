@@ -11,11 +11,11 @@ open Steema.TeeChart
 type StockTickerViewController() = 
     inherit UIViewController()
 
+    let mutable AgentState = Stop
+
     let appleLine = new Styles.FastLine(Title = "Apple")
     let msLine = new Styles.FastLine(Title = "Microsoft")
     let googleLine = new Styles.FastLine(Title = "Google")
-
-    let mutable AgentState = Stop
 
     let rec DrawLine n agentState stock (stockLine:Styles.FastLine) (stockPriceAgent:MailboxProcessor<Message>) =
         match agentState with 
@@ -26,8 +26,8 @@ type StockTickerViewController() =
                      printfn "%s %i %f" stock n reply
                      stockLine.Add reply |> ignore
                      do DrawLine (n+1) AgentState stock stockLine stockPriceAgent),
-                 (fun _ -> ()),
-                 (fun _ -> ())) 
+                 (fun _ -> ()), // exception
+                 (fun _ -> ())) // cancellation
         | Stop -> ()
 
     let StartStopSlider = 

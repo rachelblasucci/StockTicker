@@ -16,12 +16,12 @@ module Agents =
         MailboxProcessor<Message>.Start(fun inbox ->
             let rec loop value =
                 async {
-                        do! Async.Sleep(10)
+                        do! Async.Sleep 2
                         let! replyChannel = inbox.Receive()
                         let next = rand.NextDouble()
                         let sign = if rand.Next()%2-1 = 0 then 1. else -1.
                         let revalue = value + sign * next
-                        replyChannel.Reply(revalue)
+                        replyChannel.Reply revalue
                         return! loop revalue
                 }
             loop price)
