@@ -1,9 +1,6 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="StockTicker.fsproj">
-    <Files>
-      <File FileName="StockTicker.fsproj" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{C54DD332-A85E-426F-B485-2758734D89B0}|Default">
+  <MonoDevelop.Ide.ItemProperties.StockTicker PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7DB5A182-D454-45ED-BA60-27594D3B4883" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
